@@ -12,7 +12,7 @@ This repo consists of two main sketches:
 
 - Arduino (I personally use chinese Arduino Uno clone)
 
-- NFC shield [This one](http://s.click.aliexpress.com/e/r3Vj2nm) will do the job.
+- NFC shield. [This one](http://s.click.aliexpress.com/e/r3Vj2nm) will do the job.
 
 - [Arduino library for the NFC shield](https://github.com/miguelbalboa/rfid)
 

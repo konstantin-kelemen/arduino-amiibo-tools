@@ -47,7 +47,7 @@ void loop() {
 
   // Read amiibo data
   for (byte page = 0; page < pages; page++) {
-    // Write data to the page
+    // Dump data into serial
     status = (MFRC522::StatusCode) mfrc522.MIFARE_Read(page, buffer, &size);
     if (status != MFRC522::STATUS_OK) {
       Serial.print(F("Read failed: "));
@@ -61,7 +61,7 @@ void loop() {
   // Stop encryption on PCD
   mfrc522.PCD_StopCrypto1();
 
-  Serial.println("Read finiched! Now please take your Amiibo card away!");
+  Serial.println("Dump finished! Now please take your Amiibo card away!");
   delay(30000);
 }
 
