@@ -87,6 +87,7 @@ void loop() {
       Serial.println();
       Serial.println();
       Serial.println("Ready to write.");
+      return;
     }
     Serial.println();
   }
